@@ -209,3 +209,65 @@ body {
   font-weight: bold; /* agora em negrito */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+
+
+/*Roda-Pé */
+
+.footer-app {
+  background-color: #f9b9c3;
+  color: #000; /* Fonte preta */
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  font-size: 0.9rem;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  color: #000; /* Fonte preta */
+}
+
+.footer-info .social {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.footer-info .organizacao {
+  margin-top: 10px;
+  font-style: italic;
+  color: #000; /* Fonte preta */
+}
+
+.footer-info .organizacao strong {
+  font-style: normal;
+  color: #000; /* Fonte preta */
+}
+
+.footer-bottom {
+  border-top: 1px solid #e89ba9;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0 10px;
+  font-weight: 600;
+  color: #000; /* Fonte preta */
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logos img {
+  height: 30px;
+  max-width: 60px;
+  object-fit: contain;
+}
