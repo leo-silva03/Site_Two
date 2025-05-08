@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff, #fce4ec);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #ff4081;
+}
+
+.header span {
+    color: #ff1744;
+    font-weight: bold;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row-reverse; /* Adicionado para inverter a ordem */
+}
+
+.card img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-text {
+    max-width: 500px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: bold; /* Deixa o texto mais destacado */
+    margin-bottom: 20px;
+    color: rgb(102, 101, 101);
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 30px; /* Aumentado o padding lateral */
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradiente semelhante ao da imagem */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px; /* Bordas arredondadas */
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação ao passar o mouse */
+}
+
+/*Carrossel*/
+
+  .carousel-container {
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .carrossel-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    max-width: 360px;
+  }
+
+  .carrossel-card h3 {
+    margin-top: 0;
+    color: #8e1f3a;
+  }
+
+  .carrossel-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.3s;
+  }
+
+  .dot.active {
+    background: #8e1f3a;
+  }
+
+
+  .download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/*para tirar o scrollbar*/
+.carousel-container {
+  -ms-overflow-style: none;  /* IE e Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
