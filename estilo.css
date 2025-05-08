@@ -1,13 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+    width: 100%; /* Garante que o corpo não ultrapasse a largura da tela */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho */
+}
+
+* {
+    box-sizing: inherit; /* Aplica o box-sizing a todos os elementos */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #fff, #fce4ec);
     color: #333;
+    overflow-x: hidden; /* Impede o scroll horizontal */
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%; /* Garante que o container não ultrapasse a largura da tela */
+    overflow-x: hidden; /* Adicional para evitar problemas */
     margin: 0 auto;
     padding: 20px;
 }
