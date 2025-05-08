@@ -271,3 +271,25 @@ body {
   max-width: 60px;
   object-fit: contain;
 }
+
+
+.download-btn.btn-2 {
+  display: block;
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+  padding: 10px 20px; /* Reduz o espaçamento interno */
+  background-color: #ff6f61; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 10px; /* Bordas mais quadradas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  width: 150px; /* Define uma largura fixa */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animações */
+}
+
+.download-btn.btn-2:hover {
+  background-color: #e65a50; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o botão */
+}
