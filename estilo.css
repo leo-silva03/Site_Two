@@ -157,3 +157,55 @@ body {
 .carousel-container::-webkit-scrollbar {
   display: none;             /* Chrome, Safari */
 }
+
+
+/*Frame Conexao casal amor*/
+.tag-frame {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  max-width: 360px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tag-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tag-icon {
+  background-color: #ffcdd2;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+/*Descrição do App*/
+.descricao-app {
+  background-color: #fde4e8; /* fundo rosa claro */
+  color: #7a1b2c; /* tom bordô para o texto */
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 360px;
+  margin: 20px auto;
+  font-weight: bold; /* agora em negrito */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
